@@ -1,0 +1,41 @@
+{
+  "name": "fastify-app",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "index.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start:fastify": "fastify start -l info out/index.js",
+    "dev:fastify": "fastify start -w -l info -P out/index.js",
+    "start": "node out/index.js",
+    "dev": "concurrently \"tsc -w\" \"nodemon out/index.js\"",
+    "test": "node --test test/**/*.test.js",
+    "prisma:generate": "pnpm exec prisma generate",
+    "prisma:migrate": "pnpm exec prisma migrate dev",
+    "prisma:studio": "pnpm exec prisma studio",
+    "prisma:push": "pnpm exec prisma db push"
+  },
+  "keywords": [],
+  "author": "novailoveyou",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.8.0",
+    "@fastify/sensible": "^5.5.0",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.26.2",
+    "fastify-cli": "^6.1.1",
+    "fastify-plugin": "^4.5.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/uuid": "^9.0.8",
+    "nodemon": "^3.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.3"
+  }
+}
