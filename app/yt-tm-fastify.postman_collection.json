@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "4f83165f-c133-403e-b400-2fa6c481ca42",
+		"name": "yt-tm-fastify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9818545"
+	},
+	"item": [
+		{
+			"name": "Get items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ROOT}}/items",
+					"host": [
+						"{{ROOT}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ROOT}}/items/2",
+					"host": [
+						"{{ROOT}}"
+					],
+					"path": [
+						"items",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ROOT}}/items",
+					"host": [
+						"{{ROOT}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ROOT}}/items/6b8140c3-09fa-44c0-8529-341b4b49ada0",
+					"host": [
+						"{{ROOT}}"
+					],
+					"path": [
+						"items",
+						"6b8140c3-09fa-44c0-8529-341b4b49ada0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ROOT}}/items/6b8140c3-09fa-44c0-8529-341b4b49ada0",
+					"host": [
+						"{{ROOT}}"
+					],
+					"path": [
+						"items",
+						"6b8140c3-09fa-44c0-8529-341b4b49ada0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
